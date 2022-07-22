@@ -5,6 +5,7 @@ describe("Exceptions", () => {
     expect(result).toMatchObject({
       userName: "Javohir",
     });
+    expect(result.id).toBeGreaterThan(0);
   });
 
   it("should throw error if userName is falsy", () => {
